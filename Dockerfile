@@ -12,7 +12,7 @@ RUN \
         texlive-xetex \
         texlive-latex-recommended \
         latex-xcolor \
-        texlive-latex-extra 
+        texlive-latex-extra \
 	lmodern && \
     \
     \
