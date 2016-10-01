@@ -8,7 +8,12 @@ RUN \
     \
     \
     echo "===> Install XeTeX" && \
-    DEBIAN_FRONTEND=noninteractive apt-get --no-install-recommends install -y --force-yes texlive-xetex && \
+    DEBIAN_FRONTEND=noninteractive apt-get --no-install-recommends install -y --force-yes \
+        texlive-xetex \
+        texlive-latex-recommended \
+        latex-xcolor \
+        texlive-latex-extra 
+	lmodern && \
     \
     \
     echo "===> Clean up" && \
